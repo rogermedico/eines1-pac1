@@ -11,13 +11,20 @@
 
 /* logo */
 .header--logo {
-  width: auto;
+
+  width: 50px;
   margin-right: 15px;
-  font-size: 2.3rem;
+  box-shadow: 0 4px 8px 0 $box-shadow, 0 6px 20px 0 $box-shadow;
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 $box-shadow-hover, 0 6px 20px 0 $box-shadow-hover;
+  }
 }
 
 /* title text */
 .header--title {
+  display: flex;
+  align-content: center;
   font-size: 2.3rem;
   font-family: $font-family-serif;
   font-weight: 400;
