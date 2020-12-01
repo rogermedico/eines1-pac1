@@ -256,6 +256,9 @@ function relatedBooks(data,bookTopics){
     const img = document.createElement('img');
     img.classList.add('book--related--container--figure--img');
     img.setAttribute('src', relatedBook.cover);
+    img.setAttribute('src', relatedBook.thumbnail);
+    img.setAttribute('srcset', `${relatedBook.thumbnail} 130w, ${relatedBook.cover} 320w`);
+    img.setAttribute('sizes', '(max-width: 768px) 130px, 320px');
     img.setAttribute('alt', `${relatedBook.title} cover`);
     fig.appendChild(img); 
 

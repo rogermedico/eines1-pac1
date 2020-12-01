@@ -11,13 +11,14 @@
 
 /* logo */
 .header--logo {
-
-  width: 50px;
+  width: auto;
+  max-height: 50px;
   margin-right: 15px;
-  box-shadow: 0 4px 8px 0 $box-shadow, 0 6px 20px 0 $box-shadow;
+  font-size: 2.3rem;
+  fill: $color-3;
 
   &:hover {
-    box-shadow: 0 4px 8px 0 $box-shadow-hover, 0 6px 20px 0 $box-shadow-hover;
+    fill: $color-4;
   }
 }
 

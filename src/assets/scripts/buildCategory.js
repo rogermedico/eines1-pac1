@@ -70,7 +70,9 @@ function content(data,search,actualPage){
     /* img */
     const img = document.createElement('img');
     img.classList.add('category--content--books--figure--img');
-    img.setAttribute('src', books[book].cover);
+    img.setAttribute('src', books[book].thumbnail);
+    img.setAttribute('srcset', `${books[book].thumbnail} 130w, ${books[book].cover} 320w`);
+    img.setAttribute('sizes', '(max-width: 768px) 130px, 320px');
     img.setAttribute('alt', `${books[book].title} cover`);
     fig.appendChild(img); 
 

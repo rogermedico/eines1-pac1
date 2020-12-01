@@ -15,6 +15,7 @@ import { iAmInBook, iAmInCategory, iAmInHome } from './url';
 
   /* get data */
   const data = await getData();
+  console.log(data);
   
   /* build page */
   if(iAmInHome()){
