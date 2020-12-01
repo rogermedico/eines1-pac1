@@ -194,6 +194,7 @@ function bookInfo(book,bookTopics){
   downloadContainer.appendChild(downloadLink);
   const downloadIcon = document.createElement('i');
   downloadIcon.classList.add('fas', 'fa-download','book--main--content--info--download--icon');
+  downloadIcon.setAttribute('aria-hidden','true');
   const downloadText = document.createTextNode('Download Book');
   downloadLink.appendChild(downloadIcon);
   downloadLink.appendChild(downloadText);
