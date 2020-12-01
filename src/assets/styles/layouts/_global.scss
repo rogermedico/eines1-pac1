@@ -55,6 +55,11 @@ body {
   }
 }
 
+/* screen reader */
+.sr {
+  display:none;
+}
+
 /* default link */
 .link {
   color: $color;
