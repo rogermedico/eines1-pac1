@@ -11,24 +11,24 @@
 
 /* body */
 body {
-  background-image: url($background-img);
+  background-image: url($background-img-xs);
   background-repeat: no-repeat;
-  background-size: 300% 230px;
+  background-size: 100% 230px;
   background-position: top;
   font-family: $font-family-sans-serif;
   background-color: $background-color;
   color: $text-color;
 
-  @media (min-width: $extra-small) {
-    background-size: 200% 230px;
-  }
-
   @media (min-width: $small) {
-    background-size: 150% 230px;
+    background-image: url($background-img-sm);
   }
 
   @media (min-width: $medium) {
-    background-size: 100% 230px;
+    background-image: url($background-img-md);
+  }
+
+  @media (min-width: $large) {
+    background-image: url($background-img-lg);
   }
 }
 
@@ -68,4 +68,29 @@ body {
 
 p {
   margin-bottom: .5rem;
+}
+
+/* animation for titles */
+.animated-title {
+  display: inline-block;
+  animation: animated-titles .8s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+@keyframes animated-titles {
+  0% {
+    letter-spacing: -.5em;
+    transform: translateZ(-800px) scale(.5);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateZ(0) scale(1.5);
+    filter: blur(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

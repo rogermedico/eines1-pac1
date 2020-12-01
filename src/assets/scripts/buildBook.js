@@ -44,9 +44,12 @@ export function buildBook(data){
 function bookInfo(book,bookTopics){
 
   /* set title */
+  const titleSpan = document.createElement('span');
+  titleSpan.classList.add('animated-title');
+  titleSpan.textContent = book.title;
   const title = document.querySelector('#book-title');
-  title.textContent = book.title;
   title.classList.add('book--main--subtitle');
+  title.appendChild(titleSpan);
 
   /* cover */
   const cover = document.createElement('img');
@@ -208,9 +211,12 @@ function relatedBooks(data,bookTopics){
   const relatedBooksSection = document.querySelector('#book-related');
 
   /* title */
+  const titleSpan = document.createElement('span');
+  titleSpan.classList.add('animated-title');
+  titleSpan.textContent = 'Related Books';
   const title = document.createElement('h2');
   title.classList.add('book--related--subtitle');
-  title.textContent = 'Related Books';
+  title.appendChild(titleSpan);
   relatedBooksSection.appendChild(title);
 
   /* container */

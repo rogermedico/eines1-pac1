@@ -28,10 +28,13 @@ export function buildCategory(data){
 function content(data,search,actualPage){
 
   /* set title */
+  const titleSpan = document.createElement('span');
+  titleSpan.classList.add('animated-title');
+  titleSpan.textContent = search.t;
   const title = document.querySelector('#category-title');
-  title.textContent = search.t;
   title.classList.add('category--main--subtitle');
-  
+  title.appendChild(titleSpan);
+
   /* set tags */
   const tags = TOPICS[search.t].split(',');
   tags.forEach(t =>{

@@ -21,7 +21,7 @@ export function buildHome(data){
 		/* Title link */
 		const titleLink = document.createElement('a');
 		titleLink.textContent = topic;
-		titleLink.classList.add('link');
+		titleLink.classList.add('link', 'animated-title');
 		titleLink.setAttribute('href', `${CATEGORY_PAGE_NAME}?t=${topic}`);
 		h3.appendChild(titleLink);
 

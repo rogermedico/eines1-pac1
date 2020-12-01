@@ -11,7 +11,7 @@
     "declaration-empty-line-before": "never",
     "value-keyword-case": "lower",
     "number-leading-zero": "never",
-    "unit-allowed-list": ["rem","%","px","s","deg"],
+    "unit-allowed-list": ["rem","%","px","s","deg","em"],
     "font-family-name-quotes": "always-unless-keyword",
     "string-quotes": "single",
     "declaration-block-single-line-max-declarations": 1,
