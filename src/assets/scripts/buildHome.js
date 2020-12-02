@@ -46,9 +46,9 @@ export function buildHome(data){
 			/* img */
 			const img = document.createElement('img');
 			img.classList.add('home--main--content--section--books--figure--img');
-      img.setAttribute('src', books[book].thumbnail);
       img.setAttribute('srcset', `${books[book].thumbnail} 130w, ${books[book].cover} 320w`);
-      img.setAttribute('sizes', '(max-width: 768px) 130px, 320px');
+      img.setAttribute('sizes', '(max-width: 768px) 140px, 330px');
+      img.setAttribute('src', books[book].cover);
 			img.setAttribute('alt', `${books[book].title} cover`);
 			fig.appendChild(img); 
 

@@ -116,7 +116,7 @@
   color: $text-color-inverse;
   background-color: $color-2;
   text-decoration: none;
-  transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out, box-shadow .5s ease-out;
 
   @media (min-width: $small) {
     font-size: 1.7rem;
