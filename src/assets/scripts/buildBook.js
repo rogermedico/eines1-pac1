@@ -262,9 +262,9 @@ function relatedBooks(data,bookTopics){
     /* img */
     const img = document.createElement('img');
     img.classList.add('book--related--container--figure--img');
-    img.setAttribute('srcset', `${books[book].thumbnail} 130w, ${books[book].cover} 320w`);
+    img.setAttribute('srcset', `${relatedBook.thumbnail} 130w, ${relatedBook.cover} 320w`);
     img.setAttribute('sizes', '(max-width: 768px) 140px, 330px');
-    img.setAttribute('src', books[book].cover);
+    img.setAttribute('src', relatedBook.cover);
     img.setAttribute('alt', `${relatedBook.title} cover`);
     fig.appendChild(img); 
 

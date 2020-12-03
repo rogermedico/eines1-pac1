@@ -38,6 +38,18 @@
   }
 }
 
+.book--main--content--cover--img {
+  height: auto;
+  width: 100%;
+  max-width: 326px;
+  min-width: 250px;
+
+  @media (min-width: $small) {
+    min-width: initial;
+    width: initial;
+  }
+}
+
 .book--main--content--info {
   margin-right: 35px;
   margin-left: 35px;
@@ -172,6 +184,7 @@
   flex: 25%;
   color: $color;
   text-decoration: none;
+  margin: 1rem 0;
 
   &:hover {
     color: $color;
@@ -180,12 +193,15 @@
 }
 
 .book--related--container--figure {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
   text-align: center;
   background-color: $background-color;
   box-shadow: 0 4px 8px 0 $box-shadow, 0 6px 20px 0 $box-shadow;
   transition: box-shadow .5s ease-out;
   margin-bottom: 25px;
+  height: 100%;
 
   &:hover {
     box-shadow: 0 4px 8px 0 $box-shadow-hover, 0 6px 20px 0 $box-shadow-hover;
@@ -200,7 +216,10 @@
 }
 
 .book--related--container--figure--figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
   padding: 10px 20px;
   max-width: 260px;
-  text-align: center;
 }

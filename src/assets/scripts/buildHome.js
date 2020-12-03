@@ -54,8 +54,8 @@ export function buildHome(data){
 
 			/* figcaption */
 			const figcaption = document.createElement('figcaption');
-			figcaption.classList.add('home--main--content--section--books--figure--figcaption');
-			figcaption.textContent = books[book].title
+      figcaption.classList.add('home--main--content--section--books--figure--figcaption');
+      figcaption.textContent = books[book].title;
 			fig.appendChild(figcaption);
 
 		}

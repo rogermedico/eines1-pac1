@@ -47,6 +47,7 @@
   flex: 0 1 260px;
   color: $color;
   text-decoration: none;
+  margin: 1rem 0;
 
   @media (min-width: $extra-small) {
     flex: 0 1 50%;
@@ -67,12 +68,15 @@
 }
 
 .category--content--books--figure {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
   text-align: center;
   background-color: var(--background-color);
   box-shadow: 0 4px 8px 0 $box-shadow, 0 6px 20px 0 $box-shadow;
   transition: box-shadow .5s ease-out;
   margin-bottom: 25px;
+  height: 100%;
 
   &:hover {
     box-shadow: 0 4px 8px 0 $box-shadow-hover, 0 6px 20px 0 $box-shadow-hover;
@@ -87,8 +91,11 @@
 }
 
 .category--content--books--figure--figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
   max-width: 260px;
-  text-align: center;
   padding: 10px 20px;
 }
 
